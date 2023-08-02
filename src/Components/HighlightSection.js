@@ -24,8 +24,8 @@ export default function HighlightSection(){
         <>
             <section className="highlights">
                 <section className="highlightsheader">
-                    <h4>This Weeks Specials!</h4>
-                    <LitlleLemonBtn text={"Online Menu"}/>
+                    <h2>This Weeks Specials!</h2>
+                    <LitlleLemonBtn text={"Online Menu"} anchor={"/menu"}/>
                 </section>
                 <section className="highlightsmain">
                     {data.map((item,index) => (

@@ -10,10 +10,10 @@ export default function HeroSection(){
                     <h2>Little Lemon</h2>
                     <h6>Chicago</h6>
                     <p>Proident veniam esse mollit cillum. Excepteur cupidatat ipsum ipsum quis nulla. Ut in nulla occaecat minim consequat officia enim magna.</p>
-                    <LitlleLemonBtn text={"Reserve a Table"} />
+                    <LitlleLemonBtn text={"Reserve a Table"} anchor={"/bookings"}/>
                 </article>
                 <figure>
-                    <img src={Img} alt="Hero section image" />
+                    <img src={Img} alt="Hero section image"/>
                 </figure>
             </section>
         </>
