@@ -4,6 +4,7 @@ import LitlleLemonBtn from "./LittleLemonBtn";
 import GreekSalad from "../assets/greek salad.jpg"
 import LemonDessert from "../assets/lemon dessert.jpg";
 import Bruccheta from "../assets/busrcceta.png";
+import "../styles/highlights.css"
 
 
 export default function HighlightSection(){
@@ -24,7 +25,7 @@ export default function HighlightSection(){
         <>
             <section className="highlights">
                 <section className="highlightsheader">
-                    <h2>This Weeks Specials!</h2>
+                    <h2 className="componenttitletext">This Weeks Specials!</h2>
                     <LitlleLemonBtn text={"Online Menu"} anchor={"/menu"}/>
                 </section>
                 <section className="highlightsmain">

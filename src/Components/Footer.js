@@ -1,4 +1,6 @@
 import React from "react";
+import useActive from "../hooks/useActive";
+import "../styles/footer.css"
 
 export default function Footer(){
     return(

@@ -1,0 +1,131 @@
+.errormsg {
+    color: #ee9972;
+    font-size: var(--highlighttext);
+    margin: 0
+}
+
+.booking-form {
+    display: grid;
+    width: 400px;
+    gap: 10px;
+}
+
+.bookingmain {
+    display: flex;
+    width: 90%;
+    margin: 0 5%;
+    min-height: 95vh;
+    margin-bottom: 5vh;
+}
+
+.bookingform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: inherit;
+    position: relative;
+}
+
+.bookingheader{
+    display: flex;
+    justify-content: start;
+    padding: 1rem 2rem;
+}
+.bookingform h2 {
+    font-size: 25pt;
+    font-weight: 500;
+    text-align: center;
+    margin: .5rem
+}
+
+.bookingform>p {
+    font-size: 13pt;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: rgb(96, 95, 95);
+}
+
+.bookingform form>label {
+    font-size: var(--highlighttext);
+    font-weight: 400;
+    text-align: start;
+}
+
+.bookingform form>input,
+.bookingform form>select {
+    background-color: #495e5710;
+    border: none;
+    border-radius: 10pt;
+    height: 40px;
+    padding-left: 1rem;
+    font-size: var(--highlighttext);
+    color: rgb(62, 62, 62);
+    margin-bottom: .7rem;
+    box-shadow: inset 0px 0px 4px -1px rgb(137, 136, 136);
+}
+
+.bookingform form>input:focus,
+.bookingform form>select:focus {
+    background-color: white;
+    border: 3px solid #495e578d;
+    outline: none;
+}
+
+.bookingform form>button {
+    width: 100%;
+    height: 40px;
+    border-radius: 8pt;
+    color: var(--grey);
+    background-color: var(--maincolor);
+    border: none;
+    font-size: var(--leadtext);
+}
+
+.bookingform form>button:disabled {
+    background-color: rgb(209, 208, 208);
+    color: rgb(106, 105, 105)
+}
+
+.formImg {
+    width: 50%;
+    background-image: url("../assets/Mario\ and\ Adrian\ A.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 15pt;
+}
+
+.formImg button {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+}
+@media screen and (max-width:950px) {
+    .bookingmain {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        min-height: max-content;
+        margin-bottom: 5vh;
+    }
+    .bookingform {
+        justify-content: start;
+    }
+}
+@media screen and (max-width:500px) {
+    .bookingform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        height: inherit;
+    }
+    .booking-form{
+        width: 300px;
+    }
+}

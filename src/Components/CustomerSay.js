@@ -4,6 +4,7 @@ import Image1 from "../assets/happy-1836445_1920.jpg"
 import Image2 from "../assets/male-7275449_1920.jpg"
 import Image3 from "../assets/man-839604_1920.jpg"
 import Image4 from "../assets/woman-4685862_1920.jpg"
+import "../styles/customersay.css"
 
 export default function CustomerSay(){
     const data = [
@@ -35,7 +36,7 @@ export default function CustomerSay(){
     return(
         <>
             <section className="customersay">
-                <h2>What our customers say about us</h2>
+                <h2 className="componenttitletext">What our customers say about us</h2>
                 <section className="testimonialsection">
                     {data.map(({img,role,rating,name},i) => (
                         <Testimonials img={img} rating={rating} name={name} role={role} key={name}/>
