@@ -13,7 +13,7 @@ export default function LoginPage({activeTab}){
         },
         validationSchema:Yup.object({
             loginemail:Yup.string().email("Enter a valid email").required("Required"),
-            loginpassword:Yup.string().matches("","Must containe at least one letter and one number").required("Required")
+            loginpassword:Yup.string().required("Required").matches(/^(?=.*[a-zA-Z])(?=.*\d).+$/, 'Password must contain at least one letter and one number')
         })
     })
     const handleSubmit = (e) => {
