@@ -1,5 +1,6 @@
 import React,{useState,useEffect,useReducer} from "react";
 import useActive from "../hooks/useActive";
+import useTitle from "../hooks/useTitle";
 import BookingForm from "../Components/BookingForm";
 import Logo from "../assets/Logo .svg";
 import useSmallViewport from "../hooks/useSmallViewport"
@@ -15,14 +16,12 @@ export default function Reservation(){
         }
     }
     useActive("Reservation")
+    useTitle("Reserve a table in Little Lemon")
     const initializeTimes = () => {
         return ["17.00","18.00","19.00","20.00","21.00","22.00"]
     }
     const [avaliableTimes,dispacth] = useReducer(updateTimes,initializeTimes())
     const [date,setDate] = useState()
-    useEffect(() => {
-        document.title = "Reserve a table in little lemon"
-    },[date])
     return(
         <>
             <header className="bookingheader">

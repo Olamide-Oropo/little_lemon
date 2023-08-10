@@ -3,10 +3,10 @@ import Image1 from "../assets/Mario and Adrian A.jpg"
 import Image2 from "../assets/restaurant.jpg"
 import "../styles/chicago.css"
 
-export default function Chicago(){
+export default function Chicago({isAboutPage}){
     return(
-        <section className="chicago" id="chicago">
-            <h2 className="componenttitletext">About Little Lemon</h2>
+        <section className={isAboutPage? "componentstart":"chicago"} id="chicago">
+            <h2 className="componenttitletext">Who are we?</h2>
             <section className="chicagomain">
                 <article className="chicagotext">
                         <h2 className="titletext">Little Lemon</h2>

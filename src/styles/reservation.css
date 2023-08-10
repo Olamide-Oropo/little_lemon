@@ -1,9 +1,3 @@
-.errormsg {
-    color: #ee9972;
-    font-size: var(--highlighttext);
-    margin: 0
-}
-
 .booking-form {
     display: grid;
     width: 400px;
@@ -47,47 +41,6 @@
     margin: 0;
     margin-bottom: 1rem;
     color: rgb(96, 95, 95);
-}
-
-.bookingform form>label {
-    font-size: var(--highlighttext);
-    font-weight: 400;
-    text-align: start;
-}
-
-.bookingform form>input,
-.bookingform form>select {
-    background-color: #495e5710;
-    border: none;
-    border-radius: 10pt;
-    height: 40px;
-    padding-left: 1rem;
-    font-size: var(--highlighttext);
-    color: rgb(62, 62, 62);
-    margin-bottom: .7rem;
-    box-shadow: inset 0px 0px 4px -1px rgb(137, 136, 136);
-}
-
-.bookingform form>input:focus,
-.bookingform form>select:focus {
-    background-color: white;
-    border: 3px solid #495e578d;
-    outline: none;
-}
-
-.bookingform form>button {
-    width: 100%;
-    height: 40px;
-    border-radius: 8pt;
-    color: var(--grey);
-    background-color: var(--maincolor);
-    border: none;
-    font-size: var(--leadtext);
-}
-
-.bookingform form>button:disabled {
-    background-color: rgb(209, 208, 208);
-    color: rgb(106, 105, 105)
 }
 
 .formImg {

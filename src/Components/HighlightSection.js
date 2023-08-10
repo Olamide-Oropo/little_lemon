@@ -11,15 +11,15 @@ export default function HighlightSection(){
     const data = [{
         img:GreekSalad,
         title:"Greek Salad",
-        price:"$12.99"
+        price:"12.99"
     },{
         img:LemonDessert,
         title:"Lemon Dessert",
-        price:"$6.00"
+        price:"6.00"
     },{
         img:Bruccheta,
         title:"Bruccheta",
-        price:"$5.99"
+        price:"5.99"
     }]
     return(
         <>

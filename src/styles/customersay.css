@@ -80,8 +80,3 @@
     font-size: 25pt;
     margin: 0 .2rem;
 }
-@media screen and (max-width:400px) {
-    .componenttitletext{
-        font-size: 20pt !important;
-    }
-}

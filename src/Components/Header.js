@@ -28,10 +28,6 @@ export default function Header(){
             anchor:"/bookings"
         },
         {
-            name:"Order Online",
-            anchor:"/bookings"
-        },
-        {
             name:"Login",
             anchor:"/login"
         },
@@ -58,7 +54,7 @@ export default function Header(){
                     <label htmlFor="navdrawer" className="navlabel"></label>
                 </div>
             }
-            <nav role={isSmallViewport? "drawer":"navigation"} style={{left:isSmallViewport && (isOpenDrawer? 0:"-250px")}}>
+            <nav role={isSmallViewport? "drawer":"navigation"} style={{left:isSmallViewport && (isOpenDrawer? 0:"-300px")}}>
                 <ul>
                     {navItem.map((item,index) => {
                         return(

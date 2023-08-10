@@ -24,6 +24,11 @@ footer strong {
     height: 100px;
     display: block;
 }
+.externallinks{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
 @media screen and (max-width:800px) {
     footer{
         flex-direction: column;

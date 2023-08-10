@@ -4,7 +4,7 @@ import LitlleLemonBtn from "./LittleLemonBtn";
 import useSmallViewport from "../hooks/useSmallViewport";
 import "../styles/herosection.css"
 
-export default function HeroSection(){
+export default function HeroSection({shouldHaveButton}){
     const isSmallViewport = useSmallViewport(680);
     return(
         <>
@@ -13,7 +13,9 @@ export default function HeroSection(){
                     <h2 className="titletext">Little Lemon</h2>
                     <h6 className="leadtext">Chicago</h6>
                     <p className="highlighttext">Proident veniam esse mollit cillum. Excepteur cupidatat ipsum ipsum quis nulla. Ut in nulla occaecat minim consequat officia enim magna.</p>
-                    <LitlleLemonBtn text={"Reserve a Table"} anchor={"/bookings"}/>
+                    {
+                        shouldHaveButton && <LitlleLemonBtn text={"Reserve a Table"} anchor={"/bookings"}/>
+                    }
                 </article>
                 {
                     !isSmallViewport &&

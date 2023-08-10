@@ -3,6 +3,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    z-index: 99;
 }
 
 header nav {
@@ -30,17 +31,16 @@ header nav ul li a {
     text-decoration: none;
 }
 
-header nav ul li a:hover,
-.activelink {
-    background-color: var(--maincolor);
-    color: #edefee;
+header nav ul li a:hover{
+    background-color: var(--grey);
+    color: gray;
     padding: .5rem 1rem;
 }
 @media screen and (max-width:1000px) {
     header {
         justify-content: space-between;
         width: 90%;
-        margin: 0 5%;
+        padding: 0 5%;
     }
     header nav ul {
         list-style: none;
@@ -64,9 +64,10 @@ header nav ul li a:hover,
     header {
         justify-content: space-between;
         width: 90%;
-        margin: 10px 5%;
+        padding: 10px 5%;
         display: flex;
         align-items: center;
+        margin: 0;
     }
     header img{
         width: 120px;
