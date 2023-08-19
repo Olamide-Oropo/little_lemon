@@ -12,11 +12,11 @@ function App() {
   return (
     <ActiveLinkProvider>
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/bookings' element={<Reservation />}/>
-        <Route path='/about' element={<About />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/menu' element={<Menu />} />
+        <Route path='/little_lemon' element={<Home />}/>
+        <Route path='/little_lemon/bookings' element={<Reservation />}/>
+        <Route path='/little_lemon/about' element={<About />} />
+        <Route path='/little_lemon/login' element={<Login />} />
+        <Route path='/little_lemon/menu' element={<Menu />} />
       </Routes>
     </ActiveLinkProvider>
   );

@@ -3,7 +3,6 @@ import useActive from "../hooks/useActive";
 import useTitle from "../hooks/useTitle";
 import useSmallViewport from "../hooks/useSmallViewport";
 import Header from "../Components/Header";
-import Logo from "../assets/search.svg"
 import HamburgerImage from "../assets/7.jpg"
 import RainbowcakeImage from "../assets/11.jpg"
 import OrientalTacoImage from "../assets/13.jpg"

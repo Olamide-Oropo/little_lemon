@@ -14,7 +14,7 @@ export default function HeroSection({shouldHaveButton}){
                     <h6 className="leadtext">Chicago</h6>
                     <p className="highlighttext">Proident veniam esse mollit cillum. Excepteur cupidatat ipsum ipsum quis nulla. Ut in nulla occaecat minim consequat officia enim magna.</p>
                     {
-                        shouldHaveButton && <LitlleLemonBtn text={"Reserve a Table"} anchor={"/bookings"}/>
+                        shouldHaveButton && <LitlleLemonBtn text={"Reserve a Table"} anchor={"/little_lemon/bookings"}/>
                     }
                 </article>
                 {

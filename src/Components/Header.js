@@ -59,7 +59,7 @@ export default function Header(){
                     {navItem.map((item,index) => {
                         return(
                             <li key={index}>
-                                <Link to={item.anchor} className={active === item.name? "activelink":""}>
+                                <Link to={`/little_lemon${item.anchor}`} className={active === item.name? "activelink":""}>
                                     {item.name}
                                 </Link>
                             </li>

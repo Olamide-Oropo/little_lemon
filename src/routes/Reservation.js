@@ -33,7 +33,7 @@ export default function Reservation(){
                     {
                         !isSmallViewport &&
                         <section className="formImg">
-                            <LitlleLemonBtn text="Home" anchor={"/"}/>
+                            <LitlleLemonBtn text="Home" anchor={"/little_lemon"}/>
                         </section>
                     }
                 </section>
