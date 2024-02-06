@@ -7,7 +7,7 @@ export default function Highlight({img,title,price}){
             <figure style={{margin:0}}>
                 <img src={img} alt={title}/>
             </figure>
-            <div style={{margin:"10px"}} className="highlightitemmain">
+            <section style={{margin:"10px"}} className="highlightitemmain">
                 <span role="heading">
                     <h6>{title}</h6>
                     <p>${price}</p>
@@ -19,7 +19,7 @@ export default function Highlight({img,title,price}){
                     <p>Order a Delivery</p>
                     <img src={Logo} alt="Dish Icon" height={"15px"}/>
                 </a>
-            </div>
+            </section>
        </article>
     )
 }
